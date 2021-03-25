@@ -1,0 +1,14 @@
+# Visual Studio
+*.suo
+*.user
+*.sln.docstates
+.vs/
+obj/
+bin/
+
+# 一時的に
+Assets/
+
+# macOS
+._*
+.DS_Store

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -76,7 +77,7 @@ namespace SwitcherDisplayClient
 		/// <param name="keyInfo">KeyInfoインスタンス</param>
 		private async void Poll(Models.KeyInfo keyInfo)
 		{
-			await Task.Run(( ) =>
+			await Task.Run(async ( ) =>
 			{
 				while (this.Running)
 				{
@@ -86,7 +87,11 @@ namespace SwitcherDisplayClient
 					{
 						this.SwitchManager.ChangeSelection(key);
 					}
-					this.PreviousKey = key;
+					if (key != this.PreviousKey)
+					{
+						this.PreviousKey = key;
+					}
+					await Task.Delay(16);
 				}
 			});
 			return;

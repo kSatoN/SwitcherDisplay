@@ -23,7 +23,7 @@ namespace SwitcherDisplayClient
 	{
 		private readonly IReadOnlyList<TextBox> ProgramList;
 		private readonly IReadOnlyList<TextBox> PreviewList;
-		private readonly Models.SwitchManager switchManager;
+		private readonly Models.SwitchManager SwitchManager;
 		private bool Running = false;
 		private int PreviousKey = -1;
 
@@ -32,17 +32,28 @@ namespace SwitcherDisplayClient
 			this.InitializeComponent( );
 			this.ProgramList = new List<TextBox> { this.TextBoxPg1, this.TextBoxPg2, this.TextBoxPg3, this.TextBoxPg4, this.TextBoxPg5, this.TextBoxPg6, this.TextBoxPg7, this.TextBoxPg8, this.TextBoxPg9 };
 			this.PreviewList = new List<TextBox> { this.TextBoxPv1, this.TextBoxPv2, this.TextBoxPv3, this.TextBoxPv4, this.TextBoxPv5, this.TextBoxPv6, this.TextBoxPv7, this.TextBoxPv8, this.TextBoxPv9 };
-			this.switchManager = new Models.SwitchManager(this.ProgramList, this.PreviewList);
+			this.SwitchManager = new Models.SwitchManager(this.ProgramList, this.PreviewList);
+		}
+
+		private void WindowContentRendered(object sender, EventArgs e)
+		{
+			MessageBoxResult messageBoxResult = MessageBox.Show("このアプリは数字キーの入力をインターネット上で公開するものです。\r\nスイッチャーの操作はキーボード操作で行ってください。マウス操作では反応しません。\r\n\r\nこのアプリの起動中はクレジットカード番号などを絶対に入力しないでください。いいですね？", "警告", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+			if (messageBoxResult == MessageBoxResult.No)
+			{
+				Environment.Exit(0);
+			}
 		}
 
 		private void ButtonStopClick(object sender, RoutedEventArgs e)
 		{
 			this.Toggle(false);
+			this.SwitchManager.Stop( );
 		}
 
 		private void ButtonRunClick(object sender, RoutedEventArgs e)
 		{
 			this.Toggle(true);
+			this.SwitchManager.Start( );
 			Models.KeyInfo keyInfo = new Models.KeyInfo( );
 			this.Poll(keyInfo);
 		}
@@ -73,7 +84,7 @@ namespace SwitcherDisplayClient
 					int key = this.GetNumberKey(keyInfo);
 					if (key != this.PreviousKey && key != -1)
 					{
-						this.switchManager.ChangeSelection(key);
+						this.SwitchManager.ChangeSelection(key);
 					}
 					this.PreviousKey = key;
 				}

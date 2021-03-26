@@ -5,8 +5,8 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:local="clr-namespace:SwitcherDisplayClient"
 	mc:Ignorable="d"
-	Title="Switcher Display Sender" Width="640" Height="360" 
-	Background="#ff373737" Foreground="#ffffffff" FontFamily="Yu Gothic"  FontSize="16" FontWeight="Bold" TextOptions.TextRenderingMode="Aliased">
+	Title="Switcher Display Sender" Width="640" Height="360" MinWidth="640" MinHeight="360"
+	Background="#ff373737" Foreground="#ffffffff" FontFamily="Yu Gothic"  FontSize="16" FontWeight="Bold" TextOptions.TextRenderingMode="Aliased" ContentRendered="WindowContentRendered" WindowStartupLocation="CenterScreen">
 
 	<Grid>
 		<Grid.ColumnDefinitions>

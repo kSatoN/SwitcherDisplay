@@ -6,8 +6,8 @@
 obj/
 bin/
 
-# 一時的に
-Assets/
+# 再配布まずいっぽいの
+NBSlogo2016.ico
 
 # macOS
 ._*

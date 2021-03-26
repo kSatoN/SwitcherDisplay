@@ -30,44 +30,44 @@
 
 		<Label Content="Program" HorizontalAlignment="Left" VerticalAlignment="Bottom" Foreground="#ffffffff" Grid.Row="0" Grid.Column="0" Width="100" />
 
-		<TextBox x:Name="TextBoxPg1" Margin="0" Text="1" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPg1" Margin="0" Text="1" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ffff5252" Foreground="#ff000000" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPg2" Margin="0" Text="2" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPg2" Margin="0" Text="2" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPg3" Margin="0" Text="3" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPg3" Margin="0" Text="3" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPg4" Margin="0" Text="4" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPg4" Margin="0" Text="4" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPg5" Margin="0" Text="5" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPg5" Margin="0" Text="5" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPg6" Margin="0" Text="6" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPg6" Margin="0" Text="6" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPg7" Margin="0" Text="7" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPg7" Margin="0" Text="7" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPg8" Margin="0" Text="8" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPg8" Margin="0" Text="8" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPg9" Margin="0" Text="9" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPg9" Margin="0" Text="9" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="1" Grid.Column="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
 
 		<Label Content="Preview" HorizontalAlignment="Left" VerticalAlignment="Bottom" Foreground="#ffffffff" Grid.Row="2" Grid.Column="0" Width="100" />
 
-		<TextBox x:Name="TextBoxPv1" Margin="0" Text="1" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPv1" Margin="0" Text="1" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff8df274" Foreground="#ff000000" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPv2" Margin="0" Text="2" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPv2" Margin="0" Text="2" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPv3" Margin="0" Text="3" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPv3" Margin="0" Text="3" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPv4" Margin="0" Text="4" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPv4" Margin="0" Text="4" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPv5" Margin="0" Text="5" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPv5" Margin="0" Text="5" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPv6" Margin="0" Text="6" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPv6" Margin="0" Text="6" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPv7" Margin="0" Text="7" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPv7" Margin="0" Text="7" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPv8" Margin="0" Text="8" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPv8" Margin="0" Text="8" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
-		<TextBox x:Name="TextBoxPv9" Margin="0" Text="9" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" />
+		<TextBox x:Name="TextBoxPv9" Margin="0" Text="9" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" Grid.Row="3" Grid.Column="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Cursor="Arrow" FontSize="24" />
 
 
 		<Button x:Name="ButtonStop" Content="停止" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="72" Background="#ff606060" Foreground="#ffffffff" BorderBrush="#ff303030" Click="ButtonStopClick" />

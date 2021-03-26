@@ -21,20 +21,18 @@ namespace SwitcherDisplayClient
 	/// </summary>
 	public partial class MainWindow : Window
 	{
-		private IReadOnlyList<TextBox> ProgramList = new List<TextBox>( );
-		private IReadOnlyList<TextBox> PreviewList = new List<TextBox>( );
+		private readonly IReadOnlyList<TextBox> ProgramList;
+		private readonly IReadOnlyList<TextBox> PreviewList;
+		private readonly Models.SwitchManager switchManager;
 		private bool Running = false;
+		private int PreviousKey = -1;
 
 		public MainWindow( )
 		{
 			this.InitializeComponent( );
-			this.InitializeTextBox( );
-		}
-
-		private void InitializeTextBox( )
-		{
-			this.ProgramList = new List<TextBox> {this.TextBoxPg1, this.TextBoxPg2, this.TextBoxPg3, this.TextBoxPg4, this.TextBoxPg5, this.TextBoxPg6, this.TextBoxPg7, this.TextBoxPg8, this.TextBoxPg9};
-			this.PreviewList = new List<TextBox> {this.TextBoxPv1, this.TextBoxPv2, this.TextBoxPv3, this.TextBoxPv4, this.TextBoxPv5, this.TextBoxPv6, this.TextBoxPv7, this.TextBoxPv8, this.TextBoxPv9};
+			this.ProgramList = new List<TextBox> { this.TextBoxPg1, this.TextBoxPg2, this.TextBoxPg3, this.TextBoxPg4, this.TextBoxPg5, this.TextBoxPg6, this.TextBoxPg7, this.TextBoxPg8, this.TextBoxPg9 };
+			this.PreviewList = new List<TextBox> { this.TextBoxPv1, this.TextBoxPv2, this.TextBoxPv3, this.TextBoxPv4, this.TextBoxPv5, this.TextBoxPv6, this.TextBoxPv7, this.TextBoxPv8, this.TextBoxPv9 };
+			this.switchManager = new Models.SwitchManager(this.ProgramList, this.PreviewList);
 		}
 
 		private void ButtonStopClick(object sender, RoutedEventArgs e)
@@ -51,7 +49,6 @@ namespace SwitcherDisplayClient
 
 		private void Toggle(bool toState)
 		{
-			Debug.WriteLine("状態を変えるよ");
 			if (toState)
 			{
 				this.ButtonRun.IsEnabled = false;
@@ -64,22 +61,29 @@ namespace SwitcherDisplayClient
 			this.Running = false;
 		}
 
+		/// <summary>キーが押されるのを監視します。</summary>
+		/// <param name="keyInfo">KeyInfoインスタンス</param>
 		private async void Poll(Models.KeyInfo keyInfo)
 		{
 			await Task.Run(( ) =>
 			{
 				while (this.Running)
 				{
-					// ToDo: キーの取得（非同期あいえる）
+					// キーの取得（非同期あいえる）
 					int key = this.GetNumberKey(keyInfo);
-					// デバッグここから
-					Debug.WriteLine(key);
-					// デバッグここまで
+					if (key != this.PreviousKey && key != -1)
+					{
+						this.switchManager.ChangeSelection(key);
+					}
+					this.PreviousKey = key;
 				}
 			});
 			return;
 		}
 
+		/// <summary>押されたキーを取得します。</summary>
+		/// <param name="keyInfo">KeyInfoインスタンス</param>
+		/// <returns>数字キーの場合，押されたキーの数字。space：-2，return：-3，その他 or 押されていない：-1</returns>
 		private int GetNumberKey(Models.KeyInfo keyInfo)
 		{
 			// space bar
